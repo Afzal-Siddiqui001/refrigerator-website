@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     .ratings {
+            font-family: Arial, sans-serif;
+            text-align: center;
+       
+            background-color: aqua;
+            height: 15vh;
+            background-color: rgb(230, 230, 230);
+            width: 100%;
+        }
+        .counter {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        h1{
+            color: rgb(0, 140, 247);
+        }
+        #visitorCount{
+            color: rgb(0, 0, 0);
+            font-weight: bolder;
+        }
+        /* end ratings area */
+</style>
+<body>
+    <div class="ratings">
+        <h1>Our company Reviews</h1>
+    
+        <div class="counter">
+            <p id="visitorCount">Loading...</p>
+        </div>
+    
+    </div>
+    <script>
+         let count = 0;
+  
+  // Function to update the visitor count
+  function updateVisitorCount() {
+      count++;
+      document.getElementById("visitorCount").innerText = `Total Visitors: ${count}`;
+  }
+
+  // Simulate updating the count every 3 seconds
+  setInterval(updateVisitorCount, 3000);
+    </script>
+</body>
+</html>

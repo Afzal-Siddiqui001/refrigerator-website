@@ -1,0 +1,3110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RHEEM COOLING</title>
+  <script src="js/jquery.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+  <!-- font awesome icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="js/bootstrap.bundle.js">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
+    integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="js/java.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <script src="js/jquery.scrollUp.js"></script>
+  <script src="icons.js"></script>
+  
+
+</head>
+<style>
+  /* navigation bar */
+
+  * {
+    margin: 0;
+  }
+  
+
+  /* /* banner// * */
+
+  @keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+
+    40% {
+      transform: translateY(-20px);
+    }
+
+    60% {
+      transform: translateY(-10px);
+    }
+
+  }
+  #ticker {
+      font-size: 24px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      background-color: #3498db;
+      color: white;
+    }
+
+    @keyframes tickerAnimation {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+
+    #tickerContent {
+      display: inline-block;
+      animation: tickerAnimation 10s linear infinite;
+    }
+
+  h1 {
+    text-align: center;
+  }
+
+  #scrollUp {
+    bottom: 10px;
+    right: 20px;
+    background-image: url(images/arrow.png);
+    height: 61px;
+    width: 61px;
+    text-decoration: none;
+    padding-right: 60px;
+  }
+
+  .logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: #3498db;
+    animation: bounce 2s infinite;
+  }
+
+  .icons:hover {
+    border-bottom: 2px solid gray;
+  }
+
+  .nav-item:hover {
+    border-bottom: 2px solid gray;
+  }
+
+
+
+
+
+  .box {
+
+    width: 70%;
+  }
+
+
+
+  /* gallery */
+
+  .inline {
+
+    height: 35vh;
+    display: flex;
+    width: 100%;
+
+
+  }
+  
+  /* about us css */
+  .welcometxt {
+    color: black;
+    font-weight: bolder;
+    font-size: 55px;
+  }
+
+  .about_heading {
+    color: rgb(17, 156, 255);
+    font-weight: bold;
+    font-size: 55px;
+  }
+
+  .about_paragraph {
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 15%;
+  }
+
+  .btn {
+    text-decoration: none;
+    color: white;
+  }
+
+  .backgroundcolor {
+    background-color: rgb(200, 223, 233);
+  }
+
+  .about_img_radius {
+    border-radius: 40px
+  }
+
+  /* about us styling cmplt */
+
+  /* split window cassete */
+  .image {
+    width: 20%;
+    height: 300px;
+    background-image: url(images/s9.jpg);
+    background-size: cover;
+    margin-left: 70px;
+    margin-top: 10px;
+  }
+
+  .image {
+    box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+  }
+
+  .image1 {
+    width: 20%;
+    height: 300px;
+    background-image: url(images/spllit3.png);
+    background-size: cover;
+    margin-left: 70px;
+    margin-top: 10px;
+  }
+
+  .image1 {
+    box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+  }
+
+  .image2 {
+    width: 20%;
+    height: 300px;
+    background-image: url(images/sp3.jpeg);
+    background-size: cover;
+    margin-left: 70px;
+    margin-top: 10px;
+  }
+
+  .image2 {
+    box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+  }
+
+  .image3 {
+    width: 20%;
+    height: 300px;
+    background-image: url(images/sp4.jpeg);
+    background-size: cover;
+    margin-left: 70px;
+    margin-top: 10px;
+  }
+
+  .image3 {
+    box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+  }
+
+  .image4 {
+    width: 20%;
+    height: 300px;
+    background-image: url(images/win5.jpeg);
+    background-size: cover;
+    margin-left: 70px;
+    margin-top: 10px;
+  }
+
+  .image4 {
+    box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+  }
+
+  .imagea {
+    width: 20%;
+    height: 300px;
+    background-image: url(images/s5.jpg);
+    background-size: cover;
+    margin-left: 70px;
+    margin-top: 10px;
+  }
+
+  .imagea {
+    box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+  }
+
+  .imageb {
+    width: 20%;
+    height: 300px;
+    background-image: url(images/s88.jpg);
+    background-size: cover;
+    margin-left: 70px;
+    margin-top: 10px;
+  }
+
+  .imageb {
+    box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+  }
+
+  .imagec {
+    width: 20%;
+    height: 300px;
+    background-image: url(images/s7.jpg);
+    background-size: cover;
+    margin-left: 70px;
+    margin-top: 10px;
+  }
+
+  .imagec {
+    box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+  }
+
+  .imaged {
+    width: 20%;
+    height: 300px;
+    background-image: url(images/s8.jpg);
+    background-size: cover;
+    margin-left: 70px;
+    margin-top: 10px;
+  }
+
+  .imaged {
+    box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+  }
+
+  .image4 {
+    width: 20%;
+    height: 300px;
+    background-image: url(images/win5.jpeg);
+    background-size: cover;
+    margin-left: 70px;
+    margin-top: 10px;
+  }
+
+  .image4 {
+    box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+  }
+
+  .image5 {
+    width: 20%;
+    height: 300px;
+    background-image: url(images/win7.jpg);
+    background-size: cover;
+    margin-left: 70px;
+    margin-top: 10px;
+  }
+
+  .image5 {
+    box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+  }
+
+  .image6 {
+    width: 20%;
+    height: 300px;
+    background-image: url(images/wind2.jpeg);
+    background-size: cover;
+    margin-left: 70px;
+    margin-top: 10px;
+  }
+
+  .image6 {
+    box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+  }
+
+  .image7 {
+    width: 20%;
+    height: 300px;
+    background-image: url(images/wi8.jpeg);
+    background-size: cover;
+    margin-left: 70px;
+    margin-top: 10px;
+  }
+
+  .image7 {
+    box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+  }
+
+  .image8 {
+    width: 20%;
+    height: 300px;
+    background-image: url(images/case1.jpeg);
+    background-size: cover;
+    margin-left: 70px;
+    margin-top: 10px;
+  }
+
+  .image8 {
+    box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+  }
+
+  .image9 {
+    width: 20%;
+    height: 300px;
+    background-image: url(images/cas2.jpg);
+    background-size: cover;
+    margin-left: 70px;
+    margin-top: 10px;
+  }
+
+  .image9 {
+    box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+  }
+
+  .image10 {
+    width: 20%;
+    height: 300px;
+    background-image: url(images/cas3.jpeg);
+    background-size: cover;
+    margin-left: 70px;
+    margin-top: 10px;
+  }
+
+  .image10 {
+    box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+  }
+
+  .image11 {
+    width: 20%;
+    height: 300px;
+    background-image: url(images/cas4.jpeg);
+    background-size: cover;
+    margin-left: 70px;
+    margin-top: 10px;
+  }
+
+  .image11 {
+    box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+  }
+
+  .portion {
+    height: 300px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+    color: transparent;
+
+  }
+
+  .portion:hover {
+    background-color: rgb(201, 201, 201);
+    opacity: 80%;
+    color: black;
+
+
+  }
+
+
+  .pro {
+
+    height: 10vh;
+    width: 100%;
+ 
+
+  }
+
+  .click {
+    padding: 5px;
+    border: transparent;
+    border-radius: 10px;
+    color: transparent;
+    background-color: transparent;
+    background-color: transparent;
+    margin-left: 35%;
+    margin-top: 30%;
+  }
+
+  .clickss {
+    padding: 5px;
+    border: rgb(0, 132, 255);
+    border-radius: 10px;
+    margin-left: 35%;
+    background-color: white;
+    background-color: rgb(0, 132, 255);
+
+  }
+
+
+  .click:hover {
+    padding: 5px;
+    border-radius: 10px;
+    color: rgb(255, 253, 253);
+    background-color: white;
+    background-color: rgb(0, 132, 255);
+  }
+
+  h1 {
+    margin-top: 2%;
+    color: rgb(0, 132, 255);
+    width: 100%;
+  }
+
+  .inline2 {
+    display: flex;
+    height: 35vh;
+
+  }
+
+  .inline3 {
+    display: flex;
+    height: 35vh;
+  }
+
+  .pictures {
+    width: 150%;
+    height: 50vh;
+    padding: 6px;
+
+  }
+
+  .length {
+    width: 100%;
+    
+  }
+
+  .cell {
+    width: 20%;
+    height: 60vh;
+    padding-left: 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+
+
+
+  }
+
+  .cell img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+  }
+
+  .blur,h4 {
+    font-size: 200%;
+      margin-left: 10%;
+  }
+
+
+  .bt {
+    background-color: rgb(0, 132, 255);
+    margin-left: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: rgb(0, 132, 255);
+    color: white;
+    margin-top: 50%;
+  }
+
+  .bt:hover {
+    font-size: 15px;
+  }
+
+  .desp {
+    margin-top: 10%;
+
+  }
+
+  h3 {
+    margin-left: 35%;
+    color: black;
+    font-size: 150%;
+  }
+
+
+  p {
+    margin-left: 28%;
+    font-size: 100%;
+    margin-top: 10%;
+  }
+
+  .rup {
+    color: green;
+    font-weight: bolder;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  /* end--- split window cassete ---*/
+  /* feedback */
+  #testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .testimonial-heading {
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .testimonial-heading span {
+    font-size: 1.3rem;
+    color: #252525;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .testimonial-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .testimonial-box {
+    width: 500px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+  }
+
+  .profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+
+  .profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+
+  .name-user {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .name-user strong {
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+  }
+
+  .name-user span {
+    color: #979797;
+    font-size: 0.8rem;
+  }
+
+  .reviews {
+    color: #ffd903;
+  }
+
+  .box-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .client-comment p {
+    font-size: 0.6rem;
+    color: #4b4b4b;
+    width: 50%;
+    margin-left: 40%;
+  }
+
+  .testimonial-box:hover {
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+  }
+  .visitor{
+    width: 100%;
+    height: 20vh;
+    background-color: rgb(36, 121, 121);
+  }
+
+  @media(max-width:1060px) {
+    .testimonial-box {
+      width: 45%;
+      padding: 10px;
+    }
+  }
+
+  @media(max-width:790px) {
+    .testimonial-box {
+      width: 100%;
+    }
+
+    .testimonial-heading h1 {
+      font-size: 1.4rem;
+    }
+  }
+
+  @media(max-width:340px) {
+    .box-top {
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    .reviews {
+      margin-top: 10px;
+    }
+  }
+
+  /* end--- feedback ---*/
+  ::selection {
+    color: #ffffff;
+    background-color: #252525;
+  }
+
+  /* footer */
+  .more {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    margin-left: 20%;
+  }
+
+  .reviews {
+    color: #252525;
+    padding-right: 40%;
+  }
+
+  /* FOOTER icon set size */
+  .footericon {
+    font-size: 30px;
+  }
+
+  /* footer hyperlink set text decoration  */
+  .container a {
+    text-decoration: none;
+
+  }
+
+  /* footer heading bold */
+  .footer_heading {
+    font-weight: bolder;
+  }
+
+  /* end----- footer */
+  .Top {
+
+    width: 100%;
+    height: 5vh;
+  }
+  .port{
+width: 20%;
+
+
+    }
+
+  .categories {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    margin-top: 5%;
+  }
+
+  .cate {
+    margin-top: 3%;
+    height: 33vh;
+
+  }
+
+  .cover {
+    border: 2px solid rgb(251, 251, 251);
+    height: 35vh;
+    width: 100%;
+    margin-left: 5%;
+
+    border-radius: 10px;
+
+
+  }
+
+  .cate1 {
+    border: 1px solid gray;
+    width: 20%;
+    height: 50vh;
+    margin-left: 10%;
+    border-radius: 10px;
+
+  }
+
+  .cate1:hover {
+    box-shadow: 6px 6px 6px 6px rgb(0, 128, 255);
+
+
+  }
+
+  .cate2 {
+
+    width: 20%;
+    height: 50vh;
+    margin-left: 10%;
+    border-radius: 10px;
+    border: 1px solid gray;
+
+  }
+
+  .cate2:hover {
+    box-shadow: 6px 6px 6px 6px rgb(0, 128, 255);
+  }
+
+  .cate3 {
+
+    width: 20%;
+    height: 50vh;
+    margin-left: 10%;
+    border-radius: 10px;
+    border: 1px solid gray;
+
+  }
+
+  .cate3:hover {
+    box-shadow: 6px 6px 6px 6px rgb(0, 128, 255);
+  }
+
+  .dgfg {
+    color: black;
+  }
+
+  .room {
+width: 30%;
+    font-size: 300%;
+  }
+  .roomi{
+ width: 100%;
+   font-size:300%; 
+   
+  }
+
+  .heading {
+    width: 50%;
+    font-size: 300%;
+  }
+  .case{
+    margin-left: 30%;
+    font-size: 300%;
+    width: 40%;
+  }
+  .first {
+      font-size: 300%;
+      margin-top: 5%;
+      width: 100%;
+      margin-left: 2%;
+      text-shadow:  rgb(0, 157, 255);
+
+    }
+    .heading{
+      margin-left: 26%;
+    }
+    #otherstatus{
+      width: -10%;
+    }
+    /* ratings area */
+ 
+        .counter {
+            font-size:200%;
+
+          
+        }
+     
+        #visitorCount{
+            color: rgb(0, 0, 0);
+            font-weight: bolder;
+           margin-left: 50%;
+
+           padding-bottom: 50%;
+            
+         
+           
+         
+        }
+        /* end ratings area */
+  @media(max-width:991px){
+    .box {
+
+      width: 70%;
+    }
+    .book{
+      margin-left: 10%;
+      font-size: 300%;
+      color: #3498db;
+    }
+    #scrollUp {
+    bottom: 300px;
+    right: 180px;
+    background-image: url(images/sdsd.png);
+    height: 61px;
+    width: 61px;
+    text-decoration: none;
+    padding-right: 60px;
+  }
+
+
+    /* gallery */
+
+    .inline {
+
+      height: 35vh;
+      display: flex;
+      width: 100%;
+
+
+    }
+
+    /* about us css */
+    .welcometxt {
+      color: black;
+      font-weight: bolder;
+      font-size: 55px;
+    }
+
+    .about_heading {
+      color: rgb(17, 156, 255);
+      font-weight: bold;
+      font-size: 55px;
+    }
+
+    .about_paragraph {
+      text-align: justify;
+      font-family: 'Times New Roman', Times, serif;
+      margin-right: 15%;
+    }
+
+    .btn {
+      text-decoration: none;
+      color: white;
+    }
+    .visitor{
+    width: 100%;
+    height: 20vh;
+    background-color: rgb(36, 121, 121);
+  }
+  #visitorCount{
+            color: rgb(0, 0, 0);
+            font-weight: bolder;
+           margin-left: 50%;
+            
+         
+           
+         
+        }
+    .backgroundcolor {
+      background-color: rgb(200, 223, 233);
+    }
+
+    .about_img_radius {
+      border-radius: 40px
+    }
+
+    /* about us styling cmplt */
+
+    /* split window cassete */
+    .image {
+      width: 80%;
+      height: 200px;
+      background-image: url(images/s9.jpg);
+      background-size: cover;
+      margin-left: 30px;
+      margin-top: 10px;
+    }
+
+    .image {
+      box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+    }
+
+    .image1 {
+      width: 80%;
+      height: 200px;
+      background-image: url(images/spllit3.png);
+      background-size: cover;
+      margin-left: 30px;
+      margin-top: 10px;
+    }
+
+    .image1 {
+      box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+    }
+
+    .image2 {
+      width: 80%;
+      height: 200px;
+      background-image: url(images/sp3.jpeg);
+      background-size: cover;
+      margin-left: 30px;
+      margin-top: 10px;
+    }
+
+    .image2 {
+      box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+    }
+
+    .image3 {
+      width: 80%;
+      height: 200px;
+      background-image: url(images/sp4.jpeg);
+      background-size: cover;
+      margin-left: 30px;
+      margin-top: 10px;
+    }
+
+    .image3 {
+      box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+    }
+
+    .image4 {
+      width: 80%;
+      height: 200px;
+      background-image: url(images/win5.jpeg);
+      background-size: cover;
+      margin-left: 30px;
+      margin-top: 10px;
+    }
+
+    .image4 {
+      box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+    }
+
+    .imagea {
+      width: 80%;
+      height: 200px;
+      background-image: url(images/s5.jpg);
+      background-size: cover;
+      margin-left: 30px;
+      margin-top: 10px;
+    }
+
+    .imagea {
+      box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+    }
+
+    .imageb {
+      width: 80%;
+      height: 200px;
+      background-image: url(images/s88.jpg);
+      background-size: cover;
+      margin-left: 30px;
+      margin-top: 10px;
+    }
+
+    .imageb {
+      box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+    }
+
+    .imagec {
+      width: 80%;
+      height: 200px;
+      background-image: url(images/s7.jpg);
+      background-size: cover;
+      margin-left: 30px;
+      margin-top: 10px;
+    }
+
+    .imagec {
+      box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+    }
+
+    .imaged {
+      width: 80%;
+      height: 200px;
+      background-image: url(images/s8.jpg);
+      background-size: cover;
+      margin-left: 30px;
+      margin-top: 10px;
+    }
+
+    .imaged {
+      box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+    }
+
+    .image4 {
+      width: 80%;
+      height: 200px;
+      background-image: url(images/win5.jpeg);
+      background-size: cover;
+      margin-left: 30px;
+      margin-top: 10px;
+    }
+
+    .image4 {
+      box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+    }
+
+    .image5 {
+      width: 80%;
+      height: 200px;
+      background-image: url(images/win7.jpg);
+      background-size: cover;
+      margin-left: 30px;
+      margin-top: 10px;
+    }
+
+    .image5 {
+      box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+    }
+
+    .image6 {
+      width: 80%;
+      height: 200px;
+      background-image: url(images/wind2.jpeg);
+      background-size: cover;
+      margin-left: 30px;
+      margin-top: 10px;
+    }
+
+    .image6 {
+      box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+    }
+
+    .image7 {
+      width: 80%;
+      height: 200px;
+      background-image: url(images/wi8.jpeg);
+      background-size: cover;
+      margin-left: 30px;
+      margin-top: 10px;
+    }
+
+    .image7 {
+      box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+    }
+
+    .image8 {
+      width: 80%;
+      height: 200px;
+      background-image: url(images/case1.jpeg);
+      background-size: cover;
+      margin-left: 30px;
+      margin-top: 10px;
+    }
+
+    .image8 {
+      box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+    }
+
+    .image9 {
+      width: 80%;
+      height: 200px;
+      background-image: url(images/cas2.jpg);
+      background-size: cover;
+      margin-left: 30px;
+      margin-top: 10px;
+    }
+
+    .image9 {
+      box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+    }
+
+    .image10 {
+      width: 80%;
+      height: 200px;
+      background-image: url(images/cas3.jpeg);
+      background-size: cover;
+      margin-left: 30px;
+      margin-top: 10px;
+    }
+
+    .image10 {
+      box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+    }
+
+    .image11 {
+      width: 80%;
+      height: 200px;
+      background-image: url(images/cas4.jpeg);
+      background-size: cover;
+      margin-left: 30px;
+      margin-top: 10px;
+    }
+
+    .image11 {
+      box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+    }
+
+   
+
+    .portion {
+      height: 220px;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 40px;
+      color: transparent;
+
+    }
+
+    .portion:hover {
+      background-color: rgb(201, 201, 201);
+      opacity: 80%;
+      color: black;
+      width: 100%;
+      height: 200px;
+
+    }
+
+
+    .pro {
+
+      height: 10vh;
+      padding-left: 45%;
+
+    }
+
+    .click {
+      padding: 5px;
+      border: transparent;
+      border-radius: 10px;
+      color: transparent;
+      background-color: transparent;
+      background-color: transparent;
+      margin-left: 35%;
+      margin-top: 10%;
+    }
+
+    .clickss {
+      padding: 5px;
+      border: rgb(0, 132, 255);
+      border-radius: 10px;
+      margin-left: 35%;
+      background-color: white;
+      background-color: rgb(0, 132, 255);
+
+    }
+
+
+    .click:hover {
+      padding: 5px;
+      border-radius: 10px;
+      color: rgb(255, 253, 253);
+      background-color: white;
+      background-color: rgb(0, 132, 255);
+    }
+
+
+
+    .inline2 {
+      display: flex;
+      height: 35vh;
+
+    }
+
+    .inline3 {
+      display: flex;
+      height: 35vh;
+    }
+
+    .pictures {
+      width: 150%;
+      height: 50vh;
+      padding: 6px;
+
+    }
+
+    .length {
+      width: 100%;
+     
+    }
+
+    .cell {
+      width: 20%;
+      height: 70vh;
+      padding-left: 30px;
+      border-radius: 20px;
+      margin-top: 20px;
+
+
+
+    }
+
+    .cell img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+
+    }
+
+    .blur,
+    h4 {
+      font-size: 100%;
+      margin-left: 10%;
+    }
+
+
+    .bt {
+      background-color: rgb(0, 132, 255);
+      margin-left: 60%;
+      padding: 10px;
+      border-radius: 10px;
+      border-color: rgb(0, 132, 255);
+      color: white;
+      margin-top: 50%;
+    }
+
+    .bt:hover {
+      font-size: 15px;
+    }
+
+    .desp {
+      margin-top: 1%;
+
+    }
+
+   
+
+
+    p {
+      margin-left: 28%;
+      font-size: 100%;
+      margin-top: 10%;
+    }
+
+    .rup {
+      color: green;
+      font-weight: bolder;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* end--- split window cassete ---*/
+    /* feedback */
+    #testimonials {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .testimonial-heading {
+      letter-spacing: 1px;
+      margin: 30px 0px;
+      padding: 10px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .testimonial-heading span {
+      font-size: 1.3rem;
+      color: #252525;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .testimonial-box-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .testimonial-box {
+      width: 500px;
+      box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+      padding: 20px;
+      margin: 15px;
+      cursor: pointer;
+    }
+
+    .profile-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 10px;
+    }
+
+    .profile-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+    }
+
+    .name-user {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .name-user strong {
+      color: #3d3d3d;
+      font-size: 1.1rem;
+      letter-spacing: 0.5px;
+    }
+
+    .name-user span {
+      color: #979797;
+      font-size: 0.8rem;
+    }
+
+    .reviews {
+      color: #f9d71c;
+    }
+
+    .box-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .client-comment p {
+      font-size: 0.9rem;
+      color: #4b4b4b;
+    }
+
+    .testimonial-box:hover {
+      transform: translateY(-10px);
+      transition: all ease 0.3s;
+    }
+
+    /* end--- feedback ---*/
+    ::selection {
+      color: #ffffff;
+      background-color: #252525;
+    }
+
+    /* footer */
+    .more {
+      width: 100%;
+      height: 6vh;
+      display: flex;
+      margin-left: 20%;
+    }
+
+    .reviews {
+      color: #252525;
+      padding-right: 40%;
+    }
+
+    /* FOOTER icon set size */
+    .footericon {
+      font-size: 25px;
+    }
+
+    /* footer hyperlink set text decoration  */
+    .container a {
+      text-decoration: none;
+
+    }
+
+    /* footer heading bold */
+    .footer_heading {
+      font-weight: bolder;
+    }
+
+    /* end----- footer */
+    .Top {
+
+      width: 100%;
+      height: 5vh;
+    }
+
+    .categories {
+      background-color: rgb(255, 255, 255);
+      width: 100%;
+      height: 60vh;
+      display: flex;
+      margin-top: 5%;
+
+    }
+
+    .cate {
+      margin-top: 3%;
+      height: 40vh;
+      width: 90%;
+    
+    }
+
+   
+
+    .cate1 {
+      border: 1px solid gray;
+      width: 30%;
+      height:60vh;
+      margin-left: 5%;
+      border-radius: 10px;
+
+    }
+
+    .cate1:hover {
+      box-shadow: 6px 6px 6px 6px rgb(0, 128, 255);
+
+
+    }
+
+    .cate2 {
+
+      border: 1px solid gray;
+      width: 30%;
+      height:60vh;
+      margin-left: 5%;
+      border-radius: 10px;
+
+    }
+
+    .cate2:hover {
+      box-shadow: 6px 6px 6px 6px rgb(0, 128, 255);
+    }
+
+    .cate3 {
+
+      border: 1px solid gray;
+      width: 30%;
+      height:60vh;
+      margin-left: 5%;
+      border-radius: 10px;
+
+    }
+
+    .cate3:hover {
+      box-shadow: 6px 6px 6px 6px rgb(0, 128, 255);
+    }
+
+    .dgfg {
+      color: black;
+    }
+
+  
+
+    .heading {
+      align-items: center;
+      justify-content: center;
+    }
+
+    .room {
+      margin-right: 20%;
+    }
+
+    #otherstatus {
+      width: 150%;
+      height: 8vh;
+
+    }
+
+    .first {
+      font-size: 250%;
+      margin-top: 8%;
+    margin-left: 10%;
+    color: rgb(0, 132, 255);
+      
+
+    }
+
+    .heading {
+   
+      width: 100%;
+      font-size: 250%;
+    }
+
+   
+    .second{
+
+      width: 100%;
+      padding-bottom: 50%;
+     color: black;
+     
+      
+    }
+    .port{
+width: 20%;
+
+
+    }
+    p{
+      align-items: center;
+      justify-content: center;
+    }
+    .wcc{
+      font-size: 250%;
+      margin-top: 8%;
+    margin-left: 25%;
+    width: 100%;
+    }
+    .third{
+      width: 100%;
+      padding-right: 10%;
+      color:  rgb(0, 140, 247);
+    }
+    .copy{
+      margin-left: 20%;
+    }
+   .btn{
+   margin-right: 80%;
+   width: 35%;
+   }
+  }
+  @media (max-width:767px){
+    .box {
+
+width: 70%;
+}
+#scrollUp {
+bottom: 300px;
+right: 180px;
+background-image: url(images/sdsd.png);
+height: 61px;
+width: 61px;
+text-decoration: none;
+
+}
+
+
+/* gallery */
+
+.inline {
+
+height: 35vh;
+display: flex;
+width: 100%;
+
+
+}
+
+/* about us css */
+.welcometxt {
+color: black;
+font-weight: bolder;
+font-size: 55px;
+}
+
+.about_heading {
+color: rgb(17, 156, 255);
+font-weight: bold;
+font-size: 55px;
+}
+
+.about_paragraph {
+text-align: justify;
+font-family: 'Times New Roman', Times, serif;
+margin-right: 15%;
+}
+
+.btn {
+text-decoration: none;
+color: white;
+}
+
+.backgroundcolor {
+background-color: rgb(200, 223, 233);
+}
+
+.about_img_radius {
+border-radius: 40px
+}
+
+/* about us styling cmplt */
+
+/* split window cassete */
+.image {
+width: 80%;
+height: 200px;
+background-image: url(images/s9.jpg);
+background-size: cover;
+margin-left: 30px;
+margin-top: 10px;
+}
+
+.image {
+box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+}
+
+.image1 {
+width: 80%;
+height: 200px;
+background-image: url(images/spllit3.png);
+background-size: cover;
+margin-left: 30px;
+margin-top: 10px;
+}
+
+.image1 {
+box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+}
+
+.image2 {
+width: 80%;
+height: 200px;
+background-image: url(images/sp3.jpeg);
+background-size: cover;
+margin-left: 30px;
+margin-top: 10px;
+}
+
+.image2 {
+box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+}
+
+.image3 {
+width: 80%;
+height: 200px;
+background-image: url(images/sp4.jpeg);
+background-size: cover;
+margin-left: 30px;
+margin-top: 10px;
+}
+
+.image3 {
+box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+}
+
+.image4 {
+width: 80%;
+height: 200px;
+background-image: url(images/win5.jpeg);
+background-size: cover;
+margin-left: 30px;
+margin-top: 10px;
+}
+
+.image4 {
+box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+}
+
+.imagea {
+width: 80%;
+height: 200px;
+background-image: url(images/s5.jpg);
+background-size: cover;
+margin-left: 30px;
+margin-top: 10px;
+}
+
+.imagea {
+box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+}
+
+.imageb {
+width: 80%;
+height: 200px;
+background-image: url(images/s88.jpg);
+background-size: cover;
+margin-left: 30px;
+margin-top: 10px;
+}
+
+.imageb {
+box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+}
+
+.imagec {
+width: 80%;
+height: 200px;
+background-image: url(images/s7.jpg);
+background-size: cover;
+margin-left: 30px;
+margin-top: 10px;
+}
+
+.imagec {
+box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+}
+
+.imaged {
+width: 80%;
+height: 200px;
+background-image: url(images/s8.jpg);
+background-size: cover;
+margin-left: 30px;
+margin-top: 10px;
+}
+
+.imaged {
+box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+}
+
+.image4 {
+width: 80%;
+height: 200px;
+background-image: url(images/win5.jpeg);
+background-size: cover;
+margin-left: 30px;
+margin-top: 10px;
+}
+
+.image4 {
+box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+}
+
+.image5 {
+width: 80%;
+height: 200px;
+background-image: url(images/win7.jpg);
+background-size: cover;
+margin-left: 30px;
+margin-top: 10px;
+}
+
+.image5 {
+box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+}
+
+.image6 {
+width: 80%;
+height: 200px;
+background-image: url(images/wind2.jpeg);
+background-size: cover;
+margin-left: 30px;
+margin-top: 10px;
+}
+
+.image6 {
+box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+}
+
+.image7 {
+width: 80%;
+height: 200px;
+background-image: url(images/wi8.jpeg);
+background-size: cover;
+margin-left: 30px;
+margin-top: 10px;
+}
+
+.image7 {
+box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+}
+
+.image8 {
+width: 80%;
+height: 200px;
+background-image: url(images/case1.jpeg);
+background-size: cover;
+margin-left: 30px;
+margin-top: 10px;
+}
+
+.image8 {
+box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+}
+
+.image9 {
+width: 80%;
+height: 200px;
+background-image: url(images/cas2.jpg);
+background-size: cover;
+margin-left: 30px;
+margin-top: 10px;
+}
+
+.image9 {
+box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+}
+
+.image10 {
+width: 80%;
+height: 200px;
+background-image: url(images/cas3.jpeg);
+background-size: cover;
+margin-left: 30px;
+margin-top: 10px;
+}
+
+.image10 {
+box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+}
+
+.image11 {
+width: 80%;
+height: 200px;
+background-image: url(images/cas4.jpeg);
+background-size: cover;
+margin-left: 30px;
+margin-top: 10px;
+}
+
+.image11 {
+box-shadow: 5px 5px 5px 5px rgb(163, 163, 163);
+}
+
+
+
+.portion {
+height: 220px;
+width: 100%;
+box-sizing: border-box;
+padding: 40px;
+color: transparent;
+
+}
+
+.portion:hover {
+background-color: rgb(201, 201, 201);
+opacity: 80%;
+color: black;
+width: 100%;
+height: 200px;
+
+}
+
+
+.pro {
+
+height: 10vh;
+padding-left: 45%;
+
+}
+
+.click {
+padding: 3px;
+border: transparent;
+border-radius: 10px;
+color: transparent;
+background-color: transparent;
+background-color: transparent;
+margin-left: 35%;
+margin-top: 10%;
+}
+
+.clickss {
+padding: 3px;
+border: rgb(0, 132, 255);
+border-radius: 10px;
+margin-left: 35%;
+background-color: white;
+background-color: rgb(0, 132, 255);
+
+}
+
+
+.click:hover {
+padding: 5px;
+border-radius: 10px;
+color: rgb(255, 253, 253);
+background-color: white;
+background-color: rgb(0, 132, 255);
+}
+
+
+
+.inline2 {
+display: flex;
+height: 35vh;
+
+}
+
+.inline3 {
+display: flex;
+height: 35vh;
+}
+
+.pictures {
+width: 150%;
+height: 50vh;
+padding: 6px;
+
+}
+
+.length {
+width: 100%;
+
+}
+
+.cell {
+width: 20%;
+height: 70vh;
+padding-left: 30px;
+border-radius: 20px;
+margin-top: 20px;
+
+
+
+}
+
+.cell img {
+width: 100%;
+height: 300px;
+object-fit: cover;
+
+}
+
+.blur,
+h4 {
+font-size: 100%;
+margin-left: 10%;
+}
+
+
+.bt {
+background-color: rgb(0, 132, 255);
+margin-left: 60%;
+padding: 10px;
+border-radius: 10px;
+border-color: rgb(0, 132, 255);
+color: white;
+margin-top: 50%;
+}
+
+.bt:hover {
+font-size: 15px;
+}
+
+.desp {
+margin-top: 1%;
+
+}
+
+
+
+
+p {
+margin-left: 28%;
+font-size: 100%;
+margin-top: 10%;
+}
+
+.rup {
+color: green;
+font-weight: bolder;
+}
+
+a {
+text-decoration: none;
+}
+
+/* end--- split window cassete ---*/
+/* feedback */
+#testimonials {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width: 100%;
+}
+
+.testimonial-heading {
+letter-spacing: 1px;
+margin: 30px 0px;
+padding: 10px 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.testimonial-heading span {
+font-size: 1.3rem;
+color: #252525;
+margin-bottom: 10px;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+
+.testimonial-box-container {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+width: 100%;
+}
+
+.testimonial-box {
+width: 500px;
+box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+background-color: #ffffff;
+padding: 20px;
+margin: 15px;
+cursor: pointer;
+}
+
+.profile-img {
+width: 50px;
+height: 50px;
+border-radius: 50%;
+overflow: hidden;
+margin-right: 10px;
+}
+
+.profile-img img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: center;
+}
+
+.profile {
+display: flex;
+align-items: center;
+}
+
+.name-user {
+display: flex;
+flex-direction: column;
+}
+
+.name-user strong {
+color: #3d3d3d;
+font-size: 1.1rem;
+letter-spacing: 0.5px;
+}
+
+.name-user span {
+color: #979797;
+font-size: 0.8rem;
+}
+
+.reviews {
+color: #f9d71c;
+}
+
+.box-top {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.client-comment p {
+font-size: 0.9rem;
+color: #4b4b4b;
+}
+
+.testimonial-box:hover {
+transform: translateY(-10px);
+transition: all ease 0.3s;
+}
+
+/* end--- feedback ---*/
+::selection {
+color: #ffffff;
+background-color: #252525;
+}
+
+/* footer */
+.more {
+width: 100%;
+height: 6vh;
+display: flex;
+margin-left: 20%;
+}
+
+.reviews {
+color: #252525;
+padding-right: 40%;
+}
+
+/* FOOTER icon set size */
+.footericon {
+font-size: 25px;
+}
+
+/* footer hyperlink set text decoration  */
+.container a {
+text-decoration: none;
+
+}
+
+/* footer heading bold */
+.footer_heading {
+font-weight: bolder;
+}
+
+/* end----- footer */
+.Top {
+
+width: 100%;
+height: 5vh;
+}
+
+.categories {
+background-color: rgb(255, 255, 255);
+width: 100%;
+height: 60vh;
+display: flex;
+margin-top: 5%;
+
+}
+
+.cate {
+margin-top: 3%;
+height: 40vh;
+width: 90%;
+
+}
+
+
+
+.cate1 {
+border: 1px solid gray;
+width: 30%;
+height:60vh;
+margin-left: 5%;
+border-radius: 10px;
+
+}
+
+.cate1:hover {
+box-shadow: 6px 6px 6px 6px rgb(0, 128, 255);
+
+
+}
+
+.cate2 {
+
+border: 1px solid gray;
+width: 30%;
+height:60vh;
+margin-left: 5%;
+border-radius: 10px;
+
+}
+
+.cate2:hover {
+box-shadow: 6px 6px 6px 6px rgb(0, 128, 255);
+}
+
+.cate3 {
+
+border: 1px solid gray;
+width: 30%;
+height:60vh;
+margin-left: 5%;
+border-radius: 10px;
+
+}
+
+.cate3:hover {
+box-shadow: 6px 6px 6px 6px rgb(0, 128, 255);
+}
+
+.dgfg {
+color: black;
+}
+
+
+
+.heading {
+align-items: center;
+justify-content: center;
+}
+
+
+.room {
+width: 30%;
+    font-size: 180%;
+  }
+
+
+#otherstatus {
+width: 150%;
+height: 8vh;
+
+}
+
+.first {
+  font-size:180%;
+margin-top: 8%;
+margin-left: 10%;
+
+
+
+}
+
+.heading {
+margin-left: 10%;
+}
+
+
+.second{
+
+width: 100%;
+padding-bottom: 50%;
+
+
+}
+.port{
+width: 20%;
+
+
+}
+p{
+align-items: center;
+justify-content: center;
+}
+.wcc{
+font-size:180%;
+margin-top: 8%;
+margin-left: 20%;
+width: 100%;
+}
+.third{
+width: 100%;
+padding-right: 10%;
+color: black;
+
+}
+.copy{
+margin-left: 20%;
+}
+.btn{
+margin-right: 80%;
+width: 35%;
+}
+h1 {
+    margin-top: 2%;
+    color: rgb(0, 132, 255);
+    width: 50%;
+   
+  
+  }
+  .roomi{
+ width: 100%;
+ font-size:180%;
+   margin-left: 10%;
+   
+  }
+  .case{
+    margin-left: 20%;
+    font-size: 180%;
+    width: 63%;
+  }
+  .visitor{
+    width: 100%;
+    background-color: #f9d71c;
+  }
+  .book{
+      margin-left: 10%;
+      font-size: 300%;
+      color: #3498db;
+    }
+  }
+  .add{
+    font-family: Arial, sans-serif;
+      margin: 20px;
+      margin-top: 20px;
+    }
+
+  table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input, button {
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 600px) {
+      th, td {
+        display: block;
+        width: 100%;
+      }
+    }
+    #addContactForm{
+      background-color: #d7d8d9;
+     padding-left: 25%;
+    }
+    label{
+      font-size: 150%;
+      
+      
+    }
+    input{
+      padding: 10px;
+      padding-right: 50%;
+      border-radius: 10px;
+      color: #3498db;
+      background: none;
+      border: none;
+      border-bottom: 2px solid rgb(0, 140, 255);
+      
+    }
+    input:hover{
+      border-color: #3498db;
+     
+    }
+    input:focus{
+      outline: none;
+    }
+    button{
+      padding: 10px;
+      border-radius: 10px;
+      color: white;
+      background-color:#3498db ;
+    }
+    button:hover{
+      cursor: pointer;
+    }
+    .book{
+      margin-left: 45%;
+      font-size: 300%;
+      color: #3498db;
+    }
+
+
+
+</style>
+
+<body>
+
+  <div class="upper" style="background-color: rgb(0, 149, 218);width: 100%;height: 3vh;">
+    <p style="margin:auto; text-align: center;color: white;">free shopping from PKR 10000</p>
+  </div>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <div class="logo">
+        <h2 style="color:rgb(0, 149, 218);font-weight: bolder;padding-left: 20%;">RHEEM<span
+            style="color: green">COOLING</span> </h2>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav" style="margin-left: 35%;color: rgb(0, 149, 218);">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#mainpage.html"
+              style="color:rgb(0, 149, 218) ;">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery" style="color:rgb(0, 149, 218);margin-left: 10%;">Gallery</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#sc" style="color:rgb(0, 149, 218) ;">Split AC</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#wc" style="color:rgb(0, 149, 218) ;">Window AC</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#cc" style="color:rgb(0, 149, 218) ;">Cassete AC</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              style="color:rgb(0, 149, 218) ;">
+              Top Selling ACs
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#r.c">Room Cooler</a></li>
+              <li><a class="dropdown-item" href="#p.c">Portable AC</a></li>
+              <li><a class="dropdown-item" href="#s.c">Split AC</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <ul
+      style="display: flex;padding-right: 10%; font-size: 150%;padding-top: 1%; word-spacing: 10%; color:rgb(0, 149, 218) ;">
+      <a href="" class="icons" style="color:rgb(0, 149, 218);margin-left: 12%; " onclick="call()"><i
+          class="bi bi-telephone"></i></a>
+     
+      <a href="" class="icons" style="color:rgb(0, 149, 218);margin-left: 12%;" onclick="shop()"><i
+          class="bi bi-cart3"></i></a>
+    </ul>
+  </nav>
+
+  <video style="width: 100%;height: 90vh;" autoplay loop muted
+    src="images/GR-T Series (India)_ Mitsubishi Electric Air Conditioner (online-video-cutter.com).mp4">
+    <article>
+      <h1 style="color: white;">BRIGHTER EVERY DAY WITH RHEEM COOLING
+    </article>
+    </h1>
+  </video>
+<!-- ticker -->
+<div id="ticker">
+  <div id="tickerContent"></div>
+</div>
+<!-- ticker -->
+
+ 
+  <div class="container-fluid box">
+    <h2 style="color: black;"> Rheem Cooling is a specialist Air Conditioner retail store. Founded in 1998, Rheem
+      Cooling brings under one roof, multi-brand air conditioning products.</h2>
+  </div>
+
+  <!-- about us  start-->
+
+  <div class="container mt-5 " id="about us" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+    <div class="row gx-5 gy-5">
+      <div class="col-md-6 col-xxl-6 col-lg-6 col-12 ">
+        <h1 class="mt-5 about_heading"><span class="welcometxt">Welcome!</span> Rheem Air conditioner</h1>
+        <p class="lh-3 about_paragraph">At Rheem Cooling AC, we are dedicated to providing cutting-edge solutions for
+          comfortable and efficient indoor environments. With a rich history dating back several decades, our commitment
+          to innovation, quality, and customer satisfaction has positioned us as a trusted leader in the HVAC
+          industry.Rheem Cooling AC is a renowned name synonymous with excellence in air conditioning technology. We
+          specialize in designing, manufacturing, and delivering high-performance cooling systems that meet the diverse
+          needs of residential, commercial, and industrial settings.
+        </p>
+
+      </div>
+      <!-- picture -->
+      <div class="col-md-6 col-xxl-6 col-lg-6 col-12  ">
+        <img src="images/Rheem Cooling.png" class=" about_img_radius img-fluid">
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- about us end-- -->
+
+
+  <div class="pro" id="gallery" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+    <h1 class="our">Our Products</h1>
+  </div>
+  <div class="length">
+    <div class="main-carousel">
+      <div class="cell"><img src="images/accccc.jpg">
+        <div class="desp">
+          <h4 class="blur">Split AC</h4>
+          <p>4 ton air condition <span class="rup">Rs:499,899</span></p><a href="payment.html"><button
+              class="clickss">Card now</button></a>
+        </div>
+      
+      </div>
+      <div class="cell"><img src="images/pic2.jpeg">
+        <div class="desp">
+          <h4 class="blur">Split AC</h4>
+          <p>2 ton air condition <span class="rup">Rs:299,567</span></p><a href="payment.html"><button
+              class="clickss">Card now</button></a>
+        </div>
+      </div>
+      <div class="cell"><img src="images/pic3.jpeg">
+        <div class="desp">
+          <h4 class="blur">Split AC</h4>
+          <p>8 ton air condition <span class="rup">Rs:899,456</span></p><a href="payment.html"><button
+              class="clickss">Card now</button></a>
+        </div>
+      </div>
+      <div class="cell"><img src="images/pic5.jpg">
+        <div class="desp">
+          <h4 class="blur">Air Cooler</h4>
+          <p>10 ton air condition <span class="rup">Rs:600000</span></p><a href="payment.html"><button
+              class="clickss">Card now</button></a>
+        </div>
+      </div>
+      <div class="cell"><img src="images/pic6.jpg">
+        <div class="desp">
+          <h4 class="blur">Air Cooler</h4>
+          <p>15 ton air condition <span class="rup">Rs:10,0000</span></p><a href="payment.html"><button
+              class="clickss">Card now</button></a>
+        </div>
+      </div>
+      <div class="cell"><img src="images/pic7.jpeg">
+        <div class="desp">
+          <h4 class="blur">Cassette AC</h4>
+          <p>6 ton air condition <span class="rup">Rs:15,00000</span></p><a href="payment.html"><button
+              class="clickss">Card now</button></a>
+        </div>
+      </div>
+      <div class="cell"><img src="images/pic8.jpg">
+        <div class="desp">
+          <h4 class="blur">Cassette AC</h4>
+          <p>8 ton air condition <span class="rup">Rs:200000</span></p><a href="payment.html"><button
+              class="clickss">Card now</button></a>
+        </div>
+      </div>
+      <div class="cell"><img src="images/win5.jpeg">
+        <div class="desp">
+          <h4 class="blur">Window AC</h4>
+          <p>4 ton air condition <span class="rup">Rs:200000</span></p><a href="payment.html"><button
+              class="clickss">Card now</button></a>
+        </div>
+      </div>
+      <div class="cell"><img src="images/pic9.jpeg">
+        <div class="desp">
+          <h4 class="blur">Window AC</h4>
+          <p>3 ton air condition <span class="rup">Rs:200000</span></p><a href="payment.html"><button
+              class="clickss">Card now</button></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script>
+    $('.main-carousel').flickity({
+      // options
+      wrapAround: true,
+      freescroll: true,
+    });
+  </script>
+  <div class="splite" id="sc">
+    <h1 class="first">Split AC</h1>
+  </div>
+  <div class="inline">
+    <div class="image" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <div class="portion">
+       
+        <p>1.5 Ton air Conditioner</p>
+        <a href="payment.html"><button class="click">Card now</button></a>
+      </div>
+      <h3>Split AC</h3>
+    </div>
+    <div class="image1" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <div class="portion">
+       
+        <p>1 Ton air Conditioner</p>
+        <a href="payment.html"> <button class="click">Card now</button></a>
+      </div>
+      <h3>Split AC</h3>
+    </div>
+    <div class="image2" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <div class="portion">
+       
+        <p>2 Ton air Conditioner</p>
+        <a href="payment.html"><button class="click">Card now</button></a>
+      </div>
+      <h3>Split AC</h3>
+    </div>
+    <div class="image3" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <div class="portion">
+    
+        <p>3 Ton air Conditioner</p>
+
+
+        <a href="payment.html"> <button class="click">Card now</button></a>
+      </div>
+      <h3>Split AC</h3>
+    </div>
+  </div>
+  </div>
+  <div class="splite" id="sc">
+  </div>
+  <div class="inline">
+    <div class="imagea" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <div class="portion">
+     
+        <p>1.5 Ton air Conditioner</p>
+
+        <a href="payment.html"><button class="click">Card now</button></a>
+      </div>
+      <h3>Split AC</h3>
+    </div>
+    <div class="imageb" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <div class="portion">
+       
+        <p>1 Ton air Conditioner</p>
+        <a href="payment.html"> <button class="click">Card now</button></a>
+      </div>
+      <h3>Split AC</h3>
+    </div>
+    <div class="imagec" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <div class="portion">
+      
+        <p>2 Ton air Conditioner</p>
+        <a href="payment.html"><button class="click">Card now</button></a>
+      </div>
+      <h3>Split AC</h3>
+    </div>
+    <div class="imaged" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <div class="portion">
+       
+        <p>3 Ton air Conditioner</p>
+        <a href="payment.html"> <button class="click">Card now</button></a>
+      </div>
+      <h3>Split AC</h3>
+    </div>
+  </div>
+  </div>
+  <div class="wind" id="wc" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+    <h1 style="margin-left: 43%;width: 20%;" class="wcc">Window AC</h1>
+  </div>
+  <div class="inline2">
+    
+    <div class="image4" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+     
+      <div class="portion">
+        <p>2 Ton air Conditioner</p>
+      
+        <a href="payment.html"> <button class="click">Card now</button></a>
+     
+      </div>
+      <h3 class="third">Window AC</h3>
+    </div>
+    <div class="image5" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+  
+      <div class=" portion">
+      <p>3.5Ton air Conditioner</p>
+    
+      <a href="payment.html"> <button class="click">Card now</button></a>
+    </div>
+    <h3 class="third">Window AC</h3>
+  </div>
+  <div class="image6" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+  
+    <div class="portion">
+     
+      <p>2.5 Ton air Conditioner</p>
+      <a href="payment.html"> <button class="click">Card now</button></a>
+    </div>
+    <h3 class="third">Window AC</h3>
+  </div>
+  <div class="image7" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+ 
+    <div class="portion">
+   
+      <p>4 Ton air Conditioner</p>
+      <a href="payment.html"><button class="click">Card now</button></a>
+    </div>
+    <h3 class="third">Window AC</h3>
+  </div>
+  </div>
+  <div class="wind" id="cc">
+    <h1 class="case">Cassette AC</h1>
+  </div>
+  <div class="inline3">
+    <div class="image8" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+     
+      <div class="portion">
+       
+        <p>1 Ton air Conditioner</p>
+        <a href="payment.html"> <button class="click">Card now</button></a>
+      </div>
+      <h3 class="second">Cassette AC</h3>
+    </div>
+    <div class="image9" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+   
+      <div class="portion">
+       
+        <p>2 Ton air Conditioner</p>
+        <a href="payment.html"> <button class="click">Card now</button></a>
+      </div>
+      <h3 class="second">Cassette AC</h3>
+    </div>
+    <div class="image10" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+   
+      <div class="portion">
+       
+        <p>3Ton air Conditioner</p>
+        <a href="payment.html"> <button class="click">Card now</button></a>
+      </div>
+      <h3 class="second">Cassette AC</h3>
+    </div>
+    <div class="image11" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+    
+      <div class="portion">
+       
+        <p>4 Ton air Conditioner</p>
+        <a href="payment.html"> <button class="click">Card now</button></a>
+      </div>
+      <h3 class="second">Cassette AC</h3>
+    </div>
+  </div>
+  <div class="Top">
+    <h1 class="heading">Our Top Selling ACs</h1>
+  </div>
+  <div class="Room cooler" id="r.c">
+    <h1 class="roomi">Room Cooler</h1>
+  </div>
+  <div class="categories">
+    <div class="cate1">
+      <div class="cover">
+        <img class="cate" src="images/t2.jpg" alt="">
+        <h5>Room Cooler</h5><span class="dgfg">5 ton air condition</span><span
+          style="color: green;font-weight: bolder;margin-left: 5%;">RS:1,00000</span><a href="payment.html"><button
+            type="button" class="btn btn-primary" style="margin-left: 38%; margin-top: 5%;"> Card now</button></a>
+      </div>
+    </div>
+    <div class="cate2">
+      <div class="cover">
+        <img class="cate" src="images/t3.jpg" alt="">
+        <h5>Room Cooler</h5><span class="dgfg">10 ton air condition</span><span
+          style="color: green;font-weight: bolder;margin-left: 5%;">RS:2,00000</span><a href="payment.html"><button
+            type="button" class="btn btn-primary" style="margin-left: 38%;margin-top: 5%;">Card now</button></a>
+      </div>
+    </div>
+    <div class="cate3">
+      <div class="cover">
+        <img class="cate" src="images/t4.jpg" alt="">
+        <h5>Room Cooler</h5><span class="dgfg">15 ton air condition</span><span
+          style="color: green;font-weight: bolder;margin-left: 5%;">RS:3,00000</span><a href="payment.html"><button
+            type="button" class="btn btn-primary" style="margin-left: 38%;margin-top: 5%;">Card now</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="Room cooler">
+    <h1 class="room" style="margin-left: 38%;" id="p.c">Portable AC</h1>
+  </div>
+  <div class="categories">
+    <div class="cate1">
+      <div class="cover">
+        <img class="cate" src="images/o1.jpg" alt="">
+        <h5>Portable AC</h5><span class="dgfg">5 ton air condition</span><span
+          style="color: green;font-weight: bolder;margin-left: 5%;">RS:2,00000</span><a href="payment.html"><button
+            type="button" class="btn btn-primary" style="margin-left: 38%; margin-top: 5%;">Card now</button></a>
+      </div>
+    </div>
+    <div class="cate2">
+      <div class="cover">
+        <img class="cate" src="images/o2.jpg" alt="">
+        <h5 >Portable AC</h5><span class="dgfg">10 ton air condition</span><span
+          style="color: green;font-weight: bolder;margin-left: 5%;">RS:150,000</span><a href="payment.html"><button
+            type="button" class="btn btn-primary" style="margin-left: 38%;margin-top: 5%;">Card now</button></a>
+      </div>
+    </div>
+    <div class="cate3">
+      <div class="cover">
+        <img class="cate" src="images/port2.jpg" alt="">
+        <h5>Portable AC</h5><span class="dgfg">15 ton air condition</span><span
+          style="color: green;font-weight: bolder;margin-left: 5%;">RS:2,00000</span><a href="payment.html"><button
+            type="button" class="btn btn-primary" style="margin-left: 38%;margin-top: 5%;">Card now</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="Room cooler">
+    <h1 class="room" style="margin-left: 38%;" id="s.c">Split AC</h1>
+  </div>
+  <div class="categories">
+    <div class="cate1">
+      <div class="cover">
+        <img class="cate" src="images/i1.jpg" alt="">
+        <h5>Split AC</h5><span class="dgfg">5 ton air condition</span><span
+          style="color: green;font-weight: bolder;margin-left: 5%;">RS:50,000</span><a href="payment.html"><button
+            type="button" id="fav" class="btn btn-primary" style="margin-left: 38%; margin-top: 5%;">Card now</button></a>
+      </div>
+    </div>
+    <div class="cate2">
+      <div class="cover">
+        <img class="cate" src="images/i2.jpg" alt="">
+        <h5>Split AC</h5><span class="dgfg">10 ton air condition</span><span
+          style="color: green;font-weight: bolder;margin-left: 5%;">RS:160,000</span><a href="payment.html"><button
+            type="button" class="btn btn-primary" style="margin-left: 38%;margin-top: 5%;">Card now</button></a>
+      </div>
+    </div>
+    <div class="cate3">
+      <div class="cover">
+        <img class="cate" src="images/i3.jpg" alt="">
+        <h5>Split AC</h5><span class="dgfg">15 ton air condition</span><span
+          style="color: green;font-weight: bolder;margin-left: 5%;">RS:150,000</span><a href="payment.html"><button
+            type="button" class="btn btn-primary" style="margin-left: 38%;margin-top: 5%;">Card now</button></a>
+      </div>
+    </div>
+  </div>
+ 
+   
+
+  
+
+  <section id="testimonials" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+   
+   <div class="testimonial-heading">
+      <span>Comments</span>
+      <h4 class="reviews">Clients Says</h4>
+    </div> 
+    <!--testimonials-box-container------>
+   <div class="testimonial-box-container"> 
+      <!--BOX-1-------------->
+       <div class="testimonial-box"> 
+        <!--top------------------------->
+        <div class="box-top"> 
+          <!--profile----->
+          <div class="profile">
+            <!--img---->
+            <div class="profile-img">
+              <img src="images/c1.jpg" />
+            </div> 
+            <!--name-and-username-->
+            <div class="name-user">
+              <strong>Liam mendes</strong>
+              <span>@liammendes</span>
+            </div>
+          </div> 
+          <!--reviews------>
+         <div class="reviews">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i><!--Empty star-->
+          </div>
+        </div>  
+        <!--Comments---------------------------------------->
+         <div class="client-comment">
+          <p>"I couldn't be happier with the service from Rheem Cooling. From the initial consultation to the
+            installation of my new AC unit, the team was professional, knowledgeable, and efficient. My home is now a
+            haven of cool comfort, thanks to their expertise!".</p>
+        </div>
+      </div> 
+      <!--BOX-2-------------->
+      <div class="testimonial-box"> 
+        <!--top------------------------->
+         <div class="box-top"> 
+          <!--profile----->
+         <div class="profile"> 
+            <!--img---->
+            <div class="profile-img">
+              <img src="images/c2.jpg" />
+            </div> 
+            <!--name-and-username-->
+            <div class="name-user">
+              <strong>Noah Wood</strong>
+              <span>@noahwood</span>
+            </div>
+          </div> 
+          <!--reviews------>
+          <div class="reviews">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><!--Empty star-->
+           </div> 
+        </div> 
+        <!--Comments---------------------------------------->
+        <div class="client-comment">
+          <p>"Prompt, reliable, and friendly – Rheem Cooling exceeded my expectations. They took the time to understand
+            my specific cooling needs and recommended the perfect system for my home. The installation was seamless, and
+            I'm enjoying energy-efficient cooling year-round.".</p>
+        </div>
+      </div> 
+      <!--BOX-3-------------->
+      <div class="testimonial-box"> 
+        <!--top------------------------->
+       <div class="box-top">
+          <!--profile----->
+          <div class="profile"> 
+            <!--img---->
+            <div class="profile-img">
+              <img src="images/c8.jpg" />
+            </div> 
+            <!--name-and-username-->
+          <div class="name-user">
+              <strong>Oliver Queen</strong>
+              <span>@oliverqueen</span>
+            </div>
+          </div>
+          <!--reviews------>
+          <div class="reviews">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div> 
+        <!--Comments---------------------------------------->
+         <div class="client-comment">
+          <p> "Amazing customer service! I had an emergency AC issue on a scorching summer day, and Rheem Cooling came
+            to the rescue. Their technicians arrived promptly, diagnosed the problem efficiently, and had my AC up and
+            running in no time. I highly recommend their services."</p> 
+        </div>
+      </div>  
+  
+      <div class="counter">
+        <p id="visitorCount">Loading...</p>
+    </div>
+
+<script>
+  let count = 0;
+
+// Function to update the visitor count
+function updateVisitorCount() {
+count++;
+document.getElementById("visitorCount").innerText = `Total Visitors: ${count}`;
+}
+
+// Simulate updating the count every 3 seconds
+setInterval(updateVisitorCount, 3000);
+</script>
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+
+  
+<!-- contact_us -->
+  
+    
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-xxl-6 col-lg-6 col-12 ">
+          <h1>contact us</h1>
+            <label ><b>First name</b></label> 
+            <input type="text" name="username" class=" form-control " placeholder="First name" aria-label="First name"  required>
+            <br>
+          <label ><b>Last name</b></label>
+            <input type="text" name="lastname" class="form-control" placeholder="Last name" aria-label="Last name"  required>
+            <br>
+          <label><b>Email</b></label>
+          <input type="email" name="email" class="form-control " placeholder="Email Address" aria-label="email"  required>
+          <br>
+          <label><b>password</b></label>
+          <input type="password"  name="password" class="form-control " placeholder="Enter password" aria-label="password"  required>
+          <button type="submit" class="btn btn-primary  mt-4">submit</button>
+        </div>
+        <div class="col-6">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d57900.017781508446!2d67.03667359999999!3d24.9064699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1703568702387!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+    </div>
+</div>
+  <!-- address book -->
+  <div class="add" id="addi">
+    <h2 class="book">Address Book</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John Doe</td>
+          <td>john.doe@example.com</td>
+          <td>(555) 123-4567</td>
+          <td><button onclick="removeContact(this)">Remove</button></td>
+        </tr>
+        <tr>
+          <td>Jane Smith</td>
+          <td>jane.smith@example.com</td>
+          <td>(555) 987-6543</td>
+          <td><button onclick="removeContact(this)">Remove</button></td>
+        </tr>
+        <!-- Add more rows as needed -->
+      </tbody>
+    </table>
+  
+    <form id="addContactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+  
+      <button type="button" onclick="addContact()">Add Contact</button>
+    </form>
+
+</body>
+</html>
+<section class="bg-light mt-5" >
+<div class="container text-center">
+    <div class="row">
+        <div class="col-md-3 col-xxl-3 col-lg-3 col-12 ">
+            <h5 class="footer_heading">customers services</h5>
+            <div><a href="#" class="text-dark">Contact us</a></div>
+            <div><a href="#" class="text-dark">Help center</a></div>
+            <div><a href="#" class="text-dark">Feedback</a></div>
+            <a href="#" class="text-dark">other status</a>
+
+        </div>
+
+        <div class="col-md-3 col-xxl-3 col-lg-3 col-12 ">
+          <h5 class="footer_heading"> company</h5>
+          <div><a href="#" class="text-dark">About</a></div>
+          <div><a href="faq.html" class="text-dark">FAQ's</a></div>
+          <div><a href="#" class="text-dark">privacy</a></div>
+          <div><a href="#" class="text-dark">Term</a></div>
+
+      </div>
+
+      <div class="col-md-3 col-xxl-3 col-lg-3 col-12 ">
+        <h5 class="footer_heading">Account</h5>
+        <div><a href="login.html" class="text-dark">Login/register</a></div>
+        <div><a href="#" class="text-dark">Account dashboard</a></div>
+        <div><a href="#" class="text-dark">Address book</a></div>
+        <div><a href="#" class="text-dark">my orders</a></div>
+        <div><a href="#" class="text-dark">my wishlist</a></div>
+
+    </div>
+
+    <div class="col-md-3 col-xxl-3 col-lg-3 col-12 ">
+      <h5 class="footer_heading">sign up for new offer</h5>
+      <div class="input-group">
+        <input type="email" class="form-control w-25" placeholder="enter email id" aria-label="Recipient's username ">
+        <button class="btn btn-primary" type="button">enter</button>
+  </div>
+        <p>This site is protected and tha google <span class="text-primary">Privacy policy</span> and <span class="text-primary">Term service</span> apply</p>
+        <!-- icon -->
+        <div class="footericon">
+    <i class="fa fa-facebook-square " aria-hidden="true"></i>
+    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+    <i class="fa fa-instagram" aria-hidden="true"></i>
+    <i class="fa fa-pinterest-square" aria-hidden="true"></i>
+    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+        </div>
+    </div>
+    
+
+</div>
+</section>
+<!-- second footer start -->
+<section class="bg-light">
+<div class="container text-center">
+  <div class="row">
+    <div class="col-12">
+<p >© 2023 your website.pk</p>
+    </div>
+  </div>
+</div>
+</section>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

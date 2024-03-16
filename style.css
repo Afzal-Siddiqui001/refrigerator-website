@@ -1,0 +1,14 @@
+/* FOOTER icon set size */
+.footericon{
+    font-size: 25px;
+}
+/* footer hyperlink set text decoration  */
+
+.container a{
+    text-decoration: none;
+    
+}
+/* footer heading bold */
+.footer_heading{
+    font-weight: bolder;
+}
